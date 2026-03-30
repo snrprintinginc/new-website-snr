@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#0b0d11">
+<title>Product Configurator | SNR Printing Inc.</title>
+<meta name="description" content="Customize print products from SNR Printing Inc. with live pricing, turnaround estimate, upload area, design notes, proof option, and add-to-cart flow.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+
+<style id="yg-navbar-inline-fix">
+header, .header, .site-header, .top-header, .main-header, .navbar {flex-wrap:nowrap !important;}
+nav, .nav, .main-nav, .menu, .nav-links {white-space:nowrap !important;}
+</style>
+
+
+<style id="compact-store-grid-fix">
+.products-grid,.product-grid,.store-grid,.shop-grid,.grid-products,.catalog-grid,.product-list{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important}
+@media (max-width:1024px){.products-grid,.product-grid,.store-grid,.shop-grid,.grid-products,.catalog-grid,.product-list{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width:640px){.products-grid,.product-grid,.store-grid,.shop-grid,.grid-products,.catalog-grid,.product-list{grid-template-columns:1fr!important}}
+</style>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar"><div class="container topbar-inner"><a class="brand" href="index.html"><img src="assets/images/logo.png" alt="SNR Printing Inc. logo"><div class="brand-copy"><strong>SNR Printing Inc.</strong><span>Commercial Offset · Digital · Bindery</span></div></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button><nav class="nav"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="portfolio.html">Gallery</a><a href="products.html" class="active">Store</a><a href="quote-request.html">Get A Quote</a><a href="contact.html">Contact Us</a><a href="cart.html" class="cart-link" aria-label="Shopping cart"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.5"></circle><circle cx="18" cy="20" r="1.5"></circle><path d="M3 4h2l2.2 10.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H7"></path></svg></a><a href="login.html" class="portal-link">Client Login Portal</a></nav><a href='cart-summary.html' class='cart-btn'>🛒</a></div></header>
+<main id="main">
+<section class="page-hero"><div class="container"><div class="hero-small banner reveal" style="--hero-bg:url('assets/images/snr-premium-promo.png')"><div class="eyebrow">Product builder</div><h1>Choose specs, watch pricing update, and send cleaner jobs into production.</h1><p>This builder now covers the required storefront basics: specs, pricing summary, tax, total, estimated turnaround, upload area, design notes, proof option, and add-to-cart.</p></div></div></section>
+<section class="section"><div class="container configurator-layout">
+<article class="card reveal product-overview-card">
+  <div class="product-overview-media"><img id="configProductImage" class="media-img" src="assets/images/cover-photo.png" alt="Selected product"></div>
+  <div class="product-overview-copy">
+    <div class="badge-row"><span class="chip" id="configProductCategory">Marketing</span><span class="chip" id="configProductLead">Standard turnaround</span></div>
+    <h2 id="configProductTitle">Business Cards</h2>
+    <p id="configProductDescription">Premium first-impression cards for sales teams, owners, account managers, and leave-behinds.</p>
+    <div class="grid-2 config-mini-grid">
+      <div class="card slim-card"><strong>Common use cases</strong><ul id="configUseCases" class="product-list compact-list"></ul></div>
+      <div class="card slim-card"><strong>Popular specs</strong><ul id="configPopularSpecs" class="product-list compact-list"></ul></div>
+    </div>
+  </div>
+</article>
+
+<div class="config-main">
+  <article class="card reveal">
+    <div class="section-head compact"><div class="eyebrow">Customize</div><h3>Configure your job</h3><p>Choose the options that matter. Pricing is estimated live for storefront use and should still be confirmed for complex or specialty production.</p></div>
+    <form class="form-grid" id="configuratorForm">
+      <div><label for="sizeOption">Size</label><select id="sizeOption" data-config-field="size"></select></div>
+      <div><label for="stockOption">Paper stock</label><select id="stockOption" data-config-field="stock"></select></div>
+      <div><label for="quantityOption">Quantity</label><select id="quantityOption" data-config-field="quantity"></select></div>
+      <div><label for="sidesOption">Sides printed</label><select id="sidesOption" data-config-field="sides"><option value="1">1-sided</option><option value="2" selected>2-sided</option></select></div>
+      <div><label for="colorOption">Color mode</label><select id="colorOption" data-config-field="color"><option value="full" selected>Full colour</option><option value="bw">Black only</option></select></div>
+      <div><label for="finishOption">Coating / finish</label><select id="finishOption" data-config-field="finish"></select></div>
+      <div><label for="foldOption">Folding</label><select id="foldOption" data-config-field="fold"></select></div>
+      <div><label for="cornersOption">Corners</label><select id="cornersOption" data-config-field="corners"><option value="square" selected>Square corners</option><option value="rounded">Rounded corners</option></select></div>
+      <div><label for="laminationOption">Lamination</label><select id="laminationOption" data-config-field="lamination"><option value="none" selected>No lamination</option><option value="matte">Matte lamination</option><option value="soft-touch">Soft touch lamination</option></select></div>
+      <div><label for="speedOption">Turnaround speed</label><select id="speedOption" data-config-field="speed"><option value="standard" selected>Standard</option><option value="priority">Priority</option><option value="rush">Rush</option></select></div>
+      <div><label for="deliveryOption">Shipping / pickup</label><select id="deliveryOption" data-config-field="delivery"><option value="pickup" selected>Pickup from Mississauga</option><option value="local-delivery">Local GTA delivery</option><option value="shipping">Standard shipping</option></select></div>
+      <div><label for="designHelpOption">Design help add-on</label><select id="designHelpOption" data-config-field="designHelp"><option value="no" selected>No design help</option><option value="minor">Minor cleanup / setup</option><option value="full">Design support required</option></select></div>
+      <div><label for="proofOption">Proof approval option</label><select id="proofOption" data-config-field="proof"><option value="digital" selected>Digital PDF proof</option><option value="press">Press/colour reference proof</option><option value="none">No proof requested</option></select></div>
+      <div class="full"><label for="artworkUpload">Upload artwork</label><div class="upload-drop"><input id="artworkUpload" type="file" multiple><p class="small">Accepted here as a storefront placeholder: PDF, AI, EPS, JPG, PNG, or packaged files. This demo does not upload to a live backend yet, but the area is now represented properly in the UI.</p></div></div>
+      <div class="full"><label for="designNotes">Design notes</label><textarea id="designNotes" placeholder="Explain folds, finishing, variable versions, packaging notes, or anything the estimator/prepress team should know."></textarea></div>
+    </form>
+  </article>
+</div>
+
+<aside class="reveal">
+  <article class="card sticky-summary">
+    <div class="section-head compact"><div class="eyebrow">Pricing summary</div><h3 id="summaryTitle">Business Cards</h3><p class="small">Estimated storefront pricing. Taxes shown for Ontario checkout preview.</p></div>
+    <div class="summary-list">
+      <div class="summary-row"><span>Base estimate</span><strong id="summaryBase">$0.00</strong></div>
+      <div class="summary-row"><span>Option adjustments</span><strong id="summaryOptions">$0.00</strong></div>
+      <div class="summary-row"><span>Subtotal</span><strong id="summarySubtotal">$0.00</strong></div>
+      <div class="summary-row"><span>HST (13%)</span><strong id="summaryTax">$0.00</strong></div>
+      <div class="summary-row total"><span>Total</span><strong id="summaryTotal">$0.00</strong></div>
+    </div>
+    <div class="summary-meta">
+      <div class="meta-chip"><span>Estimated turnaround</span><strong id="summaryTurnaround">4-5 business days</strong></div>
+      <div class="meta-chip"><span>Pickup / shipping</span><strong id="summaryDelivery">Pickup from Mississauga</strong></div>
+    </div>
+    <div class="card slim-card order-review">
+      <strong>Job snapshot</strong>
+      <ul id="summarySnapshot" class="product-list compact-list"></ul>
+    </div>
+    <div class="btn-row"><button class="btn btn-primary" type="button" id="addToCartBtn">Add to Cart</button><a class="btn btn-secondary" href="quote-request.html" id="requestQuoteLink">Request custom quote</a></div>
+    <p class="small" id="cartFeedback">Storefront estimate only. Final price may adjust if artwork, finishing, or production method changes.</p>
+  </article>
+</aside>
+</div></section>
+</main>
+<footer><div class="container footer-grid"><div class="footer-brand"><img src="assets/images/logo.png" alt="SNR Printing Inc. logo"><p class="small" style="margin-top:14px">Commercial print production for corporate buyers, agencies, brokers, and trade partners who need clean output, dependable deadlines, and professional finishing.</p><div class="logo-row"><span class="logo-chip">Offset</span><span class="logo-chip">Digital</span><span class="logo-chip">Bindery</span><span class="logo-chip">Packaging</span></div></div><div><h4>Contact</h4><div class="footer-links small"><a href="tel:9056243310">(905) 624-3310</a><a href="mailto:info@snrprinting.com">info@snrprinting.com</a><span>1319 Kamato Road</span><span>Mississauga, ON L4W 2M2</span><a href="trade-accounts.html">Trade accounts</a></div></div><div><h4>Capabilities</h4><div class="footer-links small"><span>Commercial offset printing</span><span>Digital short runs</span><span>Bindery &amp; finishing</span><span>Blind shipping &amp; trade support</span></div></div></div></footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/product-data.js"></script>
+<script src="assets/js/product-configurator.js"></script>
+
+<script>
+(function(){
+  function ensureCartSummaryCTA(){
+    var addButtons = Array.from(document.querySelectorAll('button, a, input[type="button"], input[type="submit"]'))
+      .filter(function(el){
+        var txt = ((el.innerText || el.value || '') + '').toLowerCase().trim();
+        return txt.includes('add to cart');
+      });
+
+    if (!addButtons.length) return;
+
+    addButtons.forEach(function(btn){
+      if (btn.dataset.summaryCtaBound === '1') return;
+      btn.dataset.summaryCtaBound = '1';
+
+      function showSummaryCTA(){
+        var host = btn.closest('form, .product-configurator, .configurator, .product-detail, .product-page, .product-card, .container, main, section') || btn.parentElement;
+        if (!host) return;
+
+        var existing = host.querySelector('.post-cart-actions');
+        if (!existing){
+          var wrap = document.createElement('div');
+          wrap.className = 'post-cart-actions';
+          wrap.innerHTML = '<a href="cart-summary.html" class="view-cart-summary-btn">View Cart Summary</a>';
+          btn.insertAdjacentElement('afterend', wrap);
+
+          var note = document.createElement('div');
+          note.className = 'cart-added-note';
+          note.textContent = 'Item added. You can review your order before checkout.';
+          wrap.insertAdjacentElement('afterend', note);
+        }
+      }
+
+      btn.addEventListener('click', function(){
+        window.setTimeout(showSummaryCTA, 150);
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ensureCartSummaryCTA);
+  } else {
+    ensureCartSummaryCTA();
+  }
+})();
+</script>
+
+</body>
+</html>

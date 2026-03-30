@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#0b0d11">
+<title>Create Account | SNR Printing</title>
+<meta name="description" content="Create a client account for the SNR Printing portal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+
+<style id="yg-navbar-inline-fix">
+header, .header, .site-header, .top-header, .main-header, .navbar {flex-wrap:nowrap !important;}
+nav, .nav, .main-nav, .menu, .nav-links {white-space:nowrap !important;}
+</style>
+
+
+<style id="compact-store-grid-fix">
+.products-grid,.product-grid,.store-grid,.shop-grid,.grid-products,.catalog-grid,.product-list{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important}
+@media (max-width:1024px){.products-grid,.product-grid,.store-grid,.shop-grid,.grid-products,.catalog-grid,.product-list{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width:640px){.products-grid,.product-grid,.store-grid,.shop-grid,.grid-products,.catalog-grid,.product-list{grid-template-columns:1fr!important}}
+</style>
+
+</head><body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar"><div class="container topbar-inner"><a class="brand" href="index.html"><img src="assets/images/logo.png" alt="SNR Printing Inc. logo"><div class="brand-copy"><strong>SNR Printing Inc.</strong><span>Service N' Reliability You Can Trust!</span></div></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button><nav class="nav"><a href="index.html" class="">Home</a><a href="about.html" class="">About Us</a><a href="services.html" class="">Services</a><a href="portfolio.html" class="">Gallery</a><a href="products.html" class="">Store</a><a href="quote-request.html" class="">Get A Quote</a><a href="contact.html" class="active">Contact Us</a><a href="login.html" class="portal-link">Client Login</a></nav><a href='cart-summary.html' class='cart-btn'>🛒</a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="hero-small banner reveal" style="--hero-bg:url('assets/images/snr-uniform-shirt.png')"><div class="eyebrow">Create Account</div><h1>Create a client account.</h1><p>The account flow now matches the demo portal script and actually stores the account locally for testing.</p></div></div></section><section class="section"><div class="container auth-grid"><article class="auth-card reveal"><div class="portal-header"><h3>New client signup</h3><span class="status-chip warn" data-auth-badge>Demo mode</span></div><form id="registerForm" class="form-grid"><div><label for="regFirstName">First name</label><input id="regFirstName" required></div><div><label for="regLastName">Last name</label><input id="regLastName" required></div><div class="full"><label for="regCompany">Company</label><input id="regCompany"></div><div><label for="regEmail">Email</label><input id="regEmail" type="email" required></div><div><label for="regPhone">Phone</label><input id="regPhone"></div><div><label for="regPassword">Password</label><input id="regPassword" type="password" required></div><div><label for="regConfirm">Confirm password</label><input id="regConfirm" type="password" required></div><div class="full btn-row"><button class="btn btn-primary" type="submit">Create account</button><a class="btn btn-secondary" href="login.html">Already have access?</a></div><p id="registerMessage" class="small">Use at least 8 characters for the password in demo mode.</p></form></article><article class="auth-card reveal"><h3>Recommended rollout</h3><ul class="icon-list"><li>Launch the public website first</li><li>Use the portal as a guided starter experience</li><li>Connect Supabase or another backend for real auth</li><li>Then add live quotes, uploads, proofs, invoices, and payment</li></ul></article></div></section></main><footer><div class="container footer-grid"><div class="footer-brand"><img src="assets/images/logo.png" alt="SNR Printing Inc. logo"><p class="small" style="margin-top:14px">Portal starter experience aligned with the public website. Demo mode is active until a live backend is connected.</p><div class="logo-row"><span class="logo-chip">Quotes</span><span class="logo-chip">Files</span><span class="logo-chip">Proofs</span><span class="logo-chip">Invoices</span></div></div><div><h4>Client support</h4><div class="footer-links small"><a href="tel:9056243310">(905) 624-3310</a><a href="mailto:info@snrprinting.com">info@snrprinting.com</a><span data-auth-badge>Demo mode</span></div></div><div><h4>Need help?</h4><div class="footer-links small"><a href="quote-request.html">Request a quote</a><a href="contact.html">Contact the shop</a><button class="btn btn-secondary" type="button" data-logout>Logout</button></div></div></div></footer><script src="assets/js/site.js"></script><script src="assets/js/portal.js"></script></body></html>
