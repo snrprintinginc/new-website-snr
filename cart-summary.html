@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#0b0d11">
+<title>Cart Summary | SNR Printing Inc.</title>
+<meta name="description" content="Review your selected print products, quantities, and pricing before checkout.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar"><div class="container topbar-inner"><a class="brand" href="index.html"><img src="assets/images/logo.png" alt="SNR Printing Inc. logo"><div class="brand-copy"><strong>SNR Printing Inc.</strong><span>Service N' Reliability You Can Trust!</span></div></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button><nav class="nav"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="portfolio.html">Gallery</a><a href="products.html">Store</a><a href="quote-request.html">Get A Quote</a><a href="contact.html">Contact Us</a><a href="login.html" class="portal-link">Client Login</a></nav><a href="cart-summary.html" class="cart-btn" aria-label="View cart">🛒</a></div></header>
+<main id="main" class="page-shell">
+  <div class="container cart-layout">
+    <section class="cart-card reveal">
+      <div class="checkout-panel-heading">
+        <div><div class="eyebrow">Cart Summary</div><h1>Review your order before checkout.</h1><p class="small">Confirm your products, quantities, and specifications before sending your order request.</p></div>
+        <div class="chip">Items: <strong id="cartCount">0</strong></div>
+      </div>
+      <div id="cartList" class="order-list"></div>
+    </section>
+    <aside class="cart-card reveal">
+      <div class="eyebrow">Order Summary</div>
+      <h2>Totals</h2>
+      <div class="summary-lines">
+        <div class="summary-line"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div>
+        <div class="summary-line"><span>Estimated shipping</span><strong>Quoted after review</strong></div>
+        <div class="summary-line total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+      </div>
+      <div class="checkout-form-actions"><a class="btn btn-primary" href="checkout.html">Proceed to checkout</a><a class="btn btn-secondary" href="products.html">Continue shopping</a></div>
+      <ul class="checkout-secure"><li>Product specifications stay attached to each item.</li><li>Quantities can be adjusted before checkout.</li><li>Custom jobs can still be reviewed by our team before production.</li></ul>
+    </aside>
+  </div>
+</main>
+<footer><div class="container footer-grid"><div class="footer-brand"><img src="assets/images/logo.png" alt="SNR Printing Inc. logo"><p class="small" style="margin-top:14px">Commercial print production for corporate buyers, agencies, brokers, and trade partners who need clean output, dependable deadlines, and professional finishing.</p><div class="logo-row"><span class="logo-chip">Offset</span><span class="logo-chip">Digital</span><span class="logo-chip">Bindery</span><span class="logo-chip">Packaging</span></div></div><div><h4>Contact</h4><div class="footer-links small"><a href="tel:9056243310">(905) 624-3310</a><a href="mailto:info@snrprinting.com">info@snrprinting.com</a><span>1319 Kamato Road</span><span>Mississauga, ON L4W 2M2</span></div></div><div><h4>Need a custom build?</h4><div class="footer-links small"><a href="quote-request.html">Request a quote</a><a href="contact.html">Talk to the shop</a></div></div></div></footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/cart-ui.js"></script>
+</body></html>

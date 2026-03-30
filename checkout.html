@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#0b0d11">
+<title>Checkout | SNR Printing Inc.</title>
+<meta name="description" content="Provide your customer and shipping details to complete your print order request.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar"><div class="container topbar-inner"><a class="brand" href="index.html"><img src="assets/images/logo.png" alt="SNR Printing Inc. logo"><div class="brand-copy"><strong>SNR Printing Inc.</strong><span>Service N' Reliability You Can Trust!</span></div></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button><nav class="nav"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="portfolio.html">Gallery</a><a href="products.html">Store</a><a href="quote-request.html">Get A Quote</a><a href="contact.html">Contact Us</a><a href="login.html" class="portal-link">Client Login</a></nav><a href="cart-summary.html" class="cart-btn" aria-label="View cart">🛒</a></div></header>
+<main id="main" class="page-shell">
+  <div class="container checkout-layout">
+    <section class="checkout-card reveal">
+      <div class="checkout-panel-heading"><div><div class="eyebrow">Checkout</div><h1>Complete your order request.</h1><p class="small">Provide your contact, billing, and delivery details so our team can confirm production and move your job forward without delays.</p></div></div>
+      <form id="checkoutForm" class="checkout-form" novalidate>
+        <div class="grid-2"><div><label for="fullName">Full name <span aria-hidden="true">*</span></label><input id="fullName" name="fullName" autocomplete="name" required></div><div><label for="email">Email address <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required></div></div>
+        <div class="grid-2"><div><label for="phone">Phone number <span aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div><div><label for="company">Company name</label><input id="company" name="company" autocomplete="organization"></div></div>
+        <div class="grid-2"><div><label for="address1">Street address <span aria-hidden="true">*</span></label><input id="address1" name="address1" autocomplete="address-line1" required></div><div><label for="address2">Unit, suite, floor</label><input id="address2" name="address2" autocomplete="address-line2"></div></div>
+        <div class="grid-2"><div><label for="city">City <span aria-hidden="true">*</span></label><input id="city" name="city" autocomplete="address-level2" required></div><div><label for="province">Province <span aria-hidden="true">*</span></label><select id="province" name="province" autocomplete="address-level1" required><option value="">Select province</option><option>Ontario</option><option>Alberta</option><option>British Columbia</option><option>Manitoba</option><option>New Brunswick</option><option>Newfoundland and Labrador</option><option>Nova Scotia</option><option>Prince Edward Island</option><option>Quebec</option><option>Saskatchewan</option><option>Northwest Territories</option><option>Nunavut</option><option>Yukon</option></select></div></div>
+        <div class="grid-2"><div><label for="postalCode">Postal code <span aria-hidden="true">*</span></label><input id="postalCode" name="postalCode" autocomplete="postal-code" placeholder="A1A 1A1" required></div><div><label for="deliveryMethod">Delivery method <span aria-hidden="true">*</span></label><select id="deliveryMethod" name="deliveryMethod" required><option value="">Select delivery method</option><option>Pickup</option><option>Local delivery</option><option>Courier / freight</option></select></div></div>
+        <div class="grid-2"><div><label for="projectName">Project name <span aria-hidden="true">*</span></label><input id="projectName" name="projectName" placeholder="Example: Spring promo brochures" required></div><div><label for="neededBy">Needed by date <span aria-hidden="true">*</span></label><input id="neededBy" name="neededBy" type="date" required></div></div>
+        <div class="grid-2"><div><label for="billingContact">Billing contact</label><input id="billingContact" name="billingContact"></div><div><label for="poNumber">PO number</label><input id="poNumber" name="poNumber"></div></div>
+        <div><label for="notes">Order notes</label><textarea id="notes" name="notes" placeholder="Share deadlines, dock instructions, branch split details, packaging requirements, file status, or anything our team should know before production."></textarea></div>
+        <p class="small">Fields marked with * are required.</p>
+        <div class="checkout-form-actions"><button class="btn btn-primary" type="submit">Place order request</button><a class="btn btn-secondary" href="cart-summary.html">Back to cart</a></div>
+        <div id="checkoutMessage" hidden></div>
+      </form>
+    </section>
+    <aside class="checkout-card reveal">
+      <div class="eyebrow">Order Summary</div><h2>Your selected items</h2>
+      <div id="checkoutOrderSummary" class="summary-lines"></div>
+      <div class="summary-lines"><div class="summary-line total"><span>Estimated total</span><strong id="checkoutTotal">$0.00</strong></div></div>
+      <div class="inline-kpis"><div class="kpi"><strong>Production review</strong><span class="small">Every order is checked before it moves ahead.</span></div><div class="kpi"><strong>Shipping review</strong><span class="small">Freight and delivery details are confirmed as needed.</span></div><div class="kpi"><strong>File check</strong><span class="small">We follow up if artwork or specs need clarification.</span></div></div>
+    </aside>
+  </div>
+</main>
+<footer><div class="container footer-grid"><div class="footer-brand"><img src="assets/images/logo.png" alt="SNR Printing Inc. logo"><p class="small" style="margin-top:14px">Commercial print production for corporate buyers, agencies, brokers, and trade partners who need clean output, dependable deadlines, and professional finishing.</p><div class="logo-row"><span class="logo-chip">Offset</span><span class="logo-chip">Digital</span><span class="logo-chip">Bindery</span><span class="logo-chip">Packaging</span></div></div><div><h4>Contact</h4><div class="footer-links small"><a href="tel:9056243310">(905) 624-3310</a><a href="mailto:info@snrprinting.com">info@snrprinting.com</a><span>1319 Kamato Road</span><span>Mississauga, ON L4W 2M2</span></div></div><div><h4>Need a custom build?</h4><div class="footer-links small"><a href="quote-request.html">Request a quote</a><a href="contact.html">Talk to the shop</a></div></div></div></footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/cart-ui.js"></script>
+</body></html>
