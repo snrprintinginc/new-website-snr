@@ -1,0 +1,38 @@
+
+SNR Printing Client Portal Starter
+=================================
+
+What is included
+- login, register, forgot password pages
+- protected client dashboard pages
+- quote request screen
+- upload center
+- proofs and invoices pages
+- account settings page
+- demo-mode authentication using localStorage so you can preview immediately
+- Supabase-ready config example for live rollout
+
+Important
+- Demo mode is for front-end preview only.
+- Real client accounts require a backend auth service.
+- Recommended stack: Supabase Auth + PostgreSQL + Storage.
+
+To preview locally
+1. Open a terminal in this folder.
+2. Run: python3 serve.py
+3. Visit the local address shown in the terminal.
+
+To make it live later
+1. Copy assets/js/portal-config.example.js to assets/js/portal-config.js
+2. Add your Supabase URL and anon key.
+3. Replace demo auth in assets/js/portal.js with real Supabase sign-in / sign-up calls.
+4. Create tables for users, quotes, orders, invoices, proofs, uploads.
+5. Enable row-level security.
+
+Suggested database tables
+- profiles
+- quotes
+- orders
+- invoices
+- proofs
+- uploads

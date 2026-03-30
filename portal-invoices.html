@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#0b0d11">
+<title>Invoices | SNR Printing</title>
+<meta name="description" content="View invoice summaries in the SNR Printing client portal demo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+
+<style id="yg-navbar-inline-fix">
+header, .header, .site-header, .top-header, .main-header, .navbar {flex-wrap:nowrap !important;}
+nav, .nav, .main-nav, .menu, .nav-links {white-space:nowrap !important;}
+</style>
+
+
+<style id="compact-store-grid-fix">
+.products-grid,.product-grid,.store-grid,.shop-grid,.grid-products,.catalog-grid,.product-list{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important}
+@media (max-width:1024px){.products-grid,.product-grid,.store-grid,.shop-grid,.grid-products,.catalog-grid,.product-list{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width:640px){.products-grid,.product-grid,.store-grid,.shop-grid,.grid-products,.catalog-grid,.product-list{grid-template-columns:1fr!important}}
+</style>
+
+</head><body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar"><div class="container topbar-inner"><a class="brand" href="index.html"><img src="assets/images/logo.png" alt="SNR Printing Inc. logo"><div class="brand-copy"><strong>SNR Printing Inc.</strong><span>Service N' Reliability You Can Trust!</span></div></a><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button><nav class="nav"><a href="index.html" class="">Home</a><a href="about.html" class="">About Us</a><a href="services.html" class="">Services</a><a href="portfolio.html" class="">Gallery</a><a href="products.html" class="">Store</a><a href="quote-request.html" class="">Get A Quote</a><a href="contact.html" class="active">Contact Us</a><a href="login.html" class="portal-link">Client Login</a></nav><a href='cart-summary.html' class='cart-btn'>🛒</a></div></header><main id="main"><section class="page-hero"><div class="container"><div class="hero-small banner reveal" style="--hero-bg:url('assets/images/snr-cmyk-brand-art.png')"><div class="eyebrow">Client Portal</div><h1>Invoices</h1><p>Starter invoice view for client account access.</p></div></div></section><section class="section"><div class="container portal-layout"><aside class="portal-sidebar reveal"><div class="small" style="margin-bottom:1rem">Signed in as <strong data-user-name>Client</strong></div><a class="portal-nav-link" href="portal-dashboard.html">Dashboard</a><a class="portal-nav-link" href="portal-quotes.html">Quotes</a><a class="portal-nav-link" href="portal-orders.html">Orders</a><a class="portal-nav-link" href="portal-upload.html">Upload Files</a><a class="portal-nav-link" href="portal-proofs.html">Proofs</a><a class="portal-nav-link active" href="portal-invoices.html">Invoices</a><a class="portal-nav-link" href="account-settings.html">Account Settings</a></aside><div class="portal-main"><article class="portal-card reveal"><h3>Recent invoices</h3><div class="table-wrap"><table class="table"><thead><tr><th>Invoice</th><th>Date</th><th>Status</th><th>Amount</th></tr></thead><tbody><tr><td>INV-5182</td><td>Mar 18, 2026</td><td><span class="status-chip warn">Open</span></td><td>$1,285.00</td></tr><tr><td>INV-5174</td><td>Mar 10, 2026</td><td><span class="status-chip good">Paid</span></td><td>$642.50</td></tr><tr><td>INV-5169</td><td>Mar 4, 2026</td><td><span class="status-chip good">Paid</span></td><td>$2,180.00</td></tr></tbody></table></div></article></div></div></section></main><footer><div class="container footer-grid"><div class="footer-brand"><img src="assets/images/logo.png" alt="SNR Printing Inc. logo"><p class="small" style="margin-top:14px">Portal starter experience aligned with the public website. Demo mode is active until a live backend is connected.</p><div class="logo-row"><span class="logo-chip">Quotes</span><span class="logo-chip">Files</span><span class="logo-chip">Proofs</span><span class="logo-chip">Invoices</span></div></div><div><h4>Client support</h4><div class="footer-links small"><a href="tel:9056243310">(905) 624-3310</a><a href="mailto:info@snrprinting.com">info@snrprinting.com</a><span data-auth-badge>Demo mode</span></div></div><div><h4>Need help?</h4><div class="footer-links small"><a href="quote-request.html">Request a quote</a><a href="contact.html">Contact the shop</a><button class="btn btn-secondary" type="button" data-logout>Logout</button></div></div></div></footer><script src="assets/js/site.js"></script><script src="assets/js/portal.js"></script></body></html>
